@@ -17,7 +17,7 @@ Navigate to the working directory:
 - Conduct an extensive experiment with **EnseSmells** and **DeepSmells**, utilizing various embedding techniques (token_indexing, CodeBERT, CuBERT, code2vec) within the semantic module. Ensure compatibility of `model` and `data_path` argument.
     * If `model` argument is `DeepSmells`, then `data_path` argument should be the **type 1** in [info-dataset.md](embedding-dataset/info-dataset.md).
     
-    * If `model` argument is `DeepSmells_TokenIndexing`, then *data_path* argument should be the **type 2** in [info-dataset.md](embedding-dataset/info-dataset.md).
+    * If `model` argument is `DeepSmells_TokenIndexing`, then `data_path` argument should be the **type 2** in [info-dataset.md](embedding-dataset/info-dataset.md).
     
     * if `model` argument is `EnseSmells`, then `data_path` argument should be the **type 4** in  [info-dataset.md](embedding-dataset/info-dataset.md).
     
