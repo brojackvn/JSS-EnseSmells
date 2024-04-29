@@ -27,7 +27,7 @@ Navigate to the working directory:
 Run the experiment:
 ```
 python ./program/ensesmells/main.py \
-    --model "" \
+    --model "model_name" \
     --nb_epochs 85 \
     --train_batchsize 128 \
     --valid_batchsize 128 \
