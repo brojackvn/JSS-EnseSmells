@@ -162,3 +162,5 @@ cython_debug/
 *.txt
 *.csv
 .DS_Store
+
+!requirements.txt
