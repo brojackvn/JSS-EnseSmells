@@ -1,4 +1,4 @@
-python ./program/ease_deepsmells/main.py \
+python ./program/ensesmells/main.py \
     --model "DeepSmells_TokenIndexing_METRICS" \
     --nb_epochs 85 \
     --train_batchsize 128 \
@@ -7,8 +7,8 @@ python ./program/ease_deepsmells/main.py \
     --threshold 0.5 \
     --hidden_size_lstm 100 \
     --data_path "/content/drive/MyDrive/LabRISE/CodeSmellDetection/embedding-dataset/combine/GodClass/GodClass_TokenIndexing_metrics.pkl" \
-    --tracking_dir "/content/drive/MyDrive/LabRISE/DeepLearning-CodeSmell/DeepSmells/tracking/combine/GodClass" \
-    --result_dir "/content/drive/MyDrive/LabRISE/DeepLearning-CodeSmell/DeepSmells/results/combine"
+    --tracking_dir "/content/drive/MyDrive/LabRISE/DeepLearning-CodeSmell/DeepSmells/tracking/" \
+    --result_dir "/content/drive/MyDrive/LabRISE/DeepLearning-CodeSmell/DeepSmells/results/"
 
 # Here is the configure of the model
 # Note: Set the configuration

@@ -18,10 +18,8 @@ relative_path_dl_models = Path("..").joinpath("dl_models")
 # Add the dl_models directory to sys.path
 sys.path.insert(0, str(current_dir/relative_path_dl_models))
 
-import inputs
 import input_data
 
-import pickle
 from sklearn.model_selection import StratifiedKFold
 
 def write_file(file, str):
@@ -47,7 +45,7 @@ def get_data_pickle(data_path):
         - label
     '''
     pklFile = open(data_path, 'rb')
-    df = pickle.load(pklFile)
+    df = pd.read_pickle(pklFile)
     X = np.array([row for row in df['embedding']])
     y = df['label'].values
 
@@ -66,7 +64,7 @@ def get_CombineData_pickle(data_path):
         - label
     '''
     pklFile = open(data_path, 'rb')
-    df = pickle.load(pklFile)
+    df = pd.read_pickle(pklFile)
     X = np.array([row for row in df['embedding']])
     X_metrics = np.array([row for row in df['metrics']])
     y = df['label'].values
@@ -125,7 +123,7 @@ def get_data_token_indexing_COMBINING(data_path):
     gc.collect()
 
     with open(data_path, "rb") as file:
-        df = pickle.load(file)
+        df = pd.read_pickle(file)
 
     max_input_length = get_outlier_threshold(df, z=1)
     # Process give embedding length to max_input_length
@@ -158,7 +156,7 @@ def get_data_token_indexing(data_path):
     gc.collect()
 
     with open(data_path, "rb") as file:
-        df = pickle.load(file)
+        df = pd.read_pickle(file)
 
     max_input_length = get_outlier_threshold(df, z=1)
 
