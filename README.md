@@ -1,5 +1,8 @@
 # EnseSmells: Deep ensemble and programming language models for automated code smells detection
 
+![Journal](https://img.shields.io/badge/JSS-2025-00B4CC) [![DOI](https://img.shields.io/badge/DOI-10.1016/j.jss.2025.112375-orange)](https://doi.org/10.1016/j.jss.2025.112375) [![arXiv](https://img.shields.io/badge/arXiv-2404.08877-b31b1b.svg)](https://arxiv.org/abs/2502.05012)
+
+
 ## Dataset
 ```
 > cd embedding-dataset
